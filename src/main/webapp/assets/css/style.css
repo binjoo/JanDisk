@@ -1,0 +1,70 @@
+body {
+	background-color: #efefef;
+	color: #333;
+	font-family: "Microsoft YaHei", Verdana, sans-serif, "SimSun" !important;
+	font-size: 14px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.row-name, .row-size, .row-last {
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.row-name {
+	width: 58.33333333%
+}
+
+.row-size {
+	width: 16.66666667%;
+}
+
+.row-last {
+	width: 25%
+}
+
+.disk-items {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.disk-item {
+	position: relative;
+}
+
+.disk-item a:focus, .disk-item a:hover {
+	text-decoration: none;
+	background-color: #fff;
+}
+
+.title {
+	padding: 10px 0px;
+}
+
+.disk-item a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.disk-item a:after, .disk-item a:before, .row:after, .row:before {
+	display: table;
+	content: " ";
+}

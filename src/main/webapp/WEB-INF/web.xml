@@ -6,7 +6,7 @@
 
 	<filter>
 		<filter-name>RouteFilter</filter-name>
-		<filter-class>com.binjoo.core.RouteFilter</filter-class>
+		<filter-class>com.binjoo.filter.RouteFilter</filter-class>
 		<init-param>
 			<param-name>ignoreExts</param-name>
 			<param-value>ico,css,js,jpg,gif,png,bmp,doc,xls,pdf,txt,html,htm,zip,rar</param-value>
