@@ -1,8 +1,56 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
+	margin: 0;
 	background-color: #efefef;
 	color: #333;
 	font-family: "Microsoft YaHei", Verdana, sans-serif, "SimSun" !important;
 	font-size: 14px;
+	line-height: 1.42857143;
+}
+
+footer, header, main, nav {
+	display: block
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+ol, ul {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+.text-left {
+	text-align: left
+}
+
+.text-right {
+	text-align: right
+}
+
+.text-center {
+	text-align: center
 }
 
 .container {
@@ -62,6 +110,10 @@ body {
 	display: block;
 	padding: 10px 15px;
 	border-radius: 5px;
+}
+
+.disk-item a:after, .row:after {
+	clear: both;
 }
 
 .disk-item a:after, .disk-item a:before, .row:after, .row:before {
