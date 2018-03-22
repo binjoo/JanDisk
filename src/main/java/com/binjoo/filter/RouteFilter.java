@@ -46,11 +46,11 @@ public class RouteFilter implements Filter {
 
     private ParaMap CACHE_FOLDER_LSIT = new ParaMap();
 
-    private List<String> ignoreExts = new ArrayList<String>();
-
     @Override
     public void init(FilterConfig cfg) throws ServletException {
+        System.setProperty("sun.jnu.encoding", CharsetUtils.UTF_8);
         this.contextPath = cfg.getServletContext().getContextPath();
+        System.out.println("init:contextPath" + contextPath);
         this.cfg = new Configuration();
         this.cfg.setDefaultEncoding(CharsetUtils.UTF_8);
         this.cfg.setClassForTemplateLoading(this.getClass(), "/../../");
@@ -70,7 +70,7 @@ public class RouteFilter implements Filter {
 
         try {
             String servletPath = request.getServletPath();
-
+            System.out.println("doFilter:" + servletPath);
             if (servletPath.startsWith("/assets")) {
                 chi.doFilter(request, response);
                 return;
