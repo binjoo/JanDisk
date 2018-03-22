@@ -11,7 +11,7 @@
     <li class="disk-item">
         <a href="${basePath}${parent}">
             <div class="row">
-                <div class="row-name text-left">返回上一级目录</div>
+                <div class="row-name text-left"><i class="fa fa-level-up fa-fw"></i> 返回上一级目录</div>
                 <div class="row-size text-right">-</div>
                 <div class="row-last text-right">-</div>
             </div>
@@ -23,7 +23,7 @@
     <li class="disk-item">
         <a class="" href="${basePath}${row.path}">
             <div class="row">
-                <div class="row-name text-left">${row.name}</div>
+                <div class="row-name text-left"><i class="fa fa-${row.is_folder?string("folder", "file-o")} fa-fw"></i> ${row.name}</div>
                 <div class="row-size text-right">${row.is_folder?string("-", row.size)}</div>
                 <div class="row-last text-right">${row.is_folder?string("-", row.last_modified)}</div>
             </div>
